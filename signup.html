@@ -81,32 +81,21 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="public/css/styles.css" rel="stylesheet">
   </head>
   <body class="text-center">
     
-<main class="form-signin w-100 m-auto">
-  <form>
+  <form method="POST" action="/" class="form-signin w-100 m-auto">
     <img class="mb-4" src="https://avatars.githubusercontent.com/u/67243723?v=4" alt="" width="72" height="72">
     <h1 class="h3 mb-3 fw-normal">Registrese a El Periódico</h1>
 
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required autofocus>
-      <label for="floatingInput">Correo electrónico</label>
-    </div>
-    <div class="form-floating">
-        <input type="input" class="form-control" id="floatingInput" placeholder="Nombre" required>
-        <label for="floatingInput">Nombre</label>
-    </div>
-    <div class="form-floating">
-        <input type="text" class="form-control" id="floatingInput" placeholder="Apellido" required>
-        <label for="floatingInput">Apellido</label>
-    </div>
+    <input type="text" name="fName" class="form-control" placeholder="Nombre" required autofocus>
+    <input type="text" name="lName" class="form-control" placeholder="Apellido" required>
+    <input type="email" name="email" class="form-control" placeholder="Correo Electrónico" required>
 
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarse</button>
     <p class="mt-5 mb-3 text-muted">&copy; El Periodico - xArk</p>
   </form>
-</main>
 
   </body>
 </html>
